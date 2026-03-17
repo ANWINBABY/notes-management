@@ -7,10 +7,20 @@ For more information on this file, see
 https://docs.djangoproject.com/en/6.0/howto/deployment/wsgi/
 """
 
+"""
+WSGI config for note_management project.
+
+It exposes the WSGI callable as a module-level variable named ``application``.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/6.0/howto/deployment/wsgi/
+"""
+
 import os
+
 from django.core.wsgi import get_wsgi_application
 
-# Correct path to inner settings.py
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'note_management.note_management.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'note_management.settings')
 
 application = get_wsgi_application()
+
